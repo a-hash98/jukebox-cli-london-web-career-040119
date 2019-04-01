@@ -20,4 +20,3 @@ end
 
 def list(songs)
   puts ""
-
