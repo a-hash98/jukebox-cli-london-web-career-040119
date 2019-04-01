@@ -58,9 +58,9 @@ def run(songs)
     if u_inp == "help"
       help
     elsif u_inp == "list"
-      list
+      list(songs)
     elsif u_inp == "play"
-      play
+      play(songs)
     elsif u_inp == "exit"
       exit_jukebox
       break
