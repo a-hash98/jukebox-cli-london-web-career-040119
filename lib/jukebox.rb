@@ -34,6 +34,7 @@ def play(songs)
     end
   end
   if inp.class == Integer
+    puts "YES"
     if !inp.between?(1,9)
       puts "Invalid input, please try again"
     else
