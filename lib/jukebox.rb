@@ -39,6 +39,7 @@ def play(songs)
       puts "YES2"
       puts "Invalid input, please try again"
     else
+      puts "YES3"
       s = songs[inp-1]
       puts "Playing #{s}"
     end
