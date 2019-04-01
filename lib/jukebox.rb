@@ -35,3 +35,6 @@ def play(songs)
     puts "Playing #{inp}"
   end
 end
+
+def exit_jukebox
+  puts "Goodbye"
