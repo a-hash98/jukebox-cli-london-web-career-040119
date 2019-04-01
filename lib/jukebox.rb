@@ -45,4 +45,3 @@ def run
   puts "Please enter a command:"
   u_inp = gets.chomp
   while u_inp != "exit"
-    
