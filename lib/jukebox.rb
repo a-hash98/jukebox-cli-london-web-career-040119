@@ -51,9 +51,8 @@ def run(songs)
       list
     elsif u_inp == "play"
       play
-    elsif u_chomp == "exit"
+    elsif u_inp == "exit"
       exit_jukebox
-      break
       break
     end
     u_inp = gets.chomp
