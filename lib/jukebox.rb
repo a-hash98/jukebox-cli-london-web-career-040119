@@ -26,6 +26,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   inp = gets.chomp
+  puts inp.class
   if inp.class != Integer
     if !songs.include?(inp)
       puts "Invalid input, please try again"
