@@ -40,8 +40,7 @@ def play(songs)
       puts "Invalid input, please try again"
     else
       puts "YES3"
-      s = songs[inp-1]
-      puts "Playing #{s}"
+      puts "Playing #{songs[inp-1]}"
     end
   end
 
