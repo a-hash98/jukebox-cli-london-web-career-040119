@@ -55,6 +55,7 @@ def run
     elsif u_chomp == "exit"
       exit_jukebox
       break
+    end
     u_inp = gets.chomp
   end
 end
