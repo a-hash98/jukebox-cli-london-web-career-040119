@@ -29,7 +29,7 @@ def play(songs)
   if (inp.class == Integer && !inp.between?(1..9)) || !songs.include?(inp)
     puts "Invalid input, please try again"
   elsif inp.class == Integer
-    s = songs.index(inp-1)
+    s = songs[inp-1]
     puts "Playing #{s}"
   else
     puts "Playing #{inp}"
