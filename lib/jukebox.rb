@@ -44,4 +44,7 @@ def run
   help
   puts "Please enter a command:"
   u_inp = gets.chomp
-  while u_inp != "exit"
+  until u_inp != "exit" do
+    u_inp = gets.chomp
+
+  end
