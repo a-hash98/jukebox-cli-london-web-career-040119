@@ -28,7 +28,7 @@ def play(songs)
   inp = gets.chomp
   if inp.class == Integer && inp.between?(1,9)
     puts "YES"
-    break
+    return
   end
   if (inp.class == Integer && !inp.between?(1,9)) || !songs.include?(inp)
     puts "Invalid input, please try again"
