@@ -26,13 +26,12 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   inp = gets.chomp
-  if (inp.class == Integer && !inp.between?(0,9)) || !songs.include?(inp)
-    puts "Invalid input, please try again"
-  elsif inp.class == Integer && inp.between?(0,9)
-    s = songs[1]
-    puts "Playing #{s}"
-  else
-    puts "Playing #{inp}"
+  if inp.class != Integer
+    if !songs.include?(inp)
+      puts "Invalid input, please try again"
+    else
+      puts "Playing #{inp}"
+    end
   end
 end
 
