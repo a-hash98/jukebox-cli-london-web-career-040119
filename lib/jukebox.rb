@@ -33,6 +33,15 @@ def play(songs)
       puts "Playing #{inp}"
     end
   end
+  if inp.class == Integer
+    if !inp.between?(1,9)
+      puts "Invalid input, please try again"
+    else
+      s = songs[inp-1]
+      puts "Playing #{inp}"
+    end
+  end
+  
 end
 
 def exit_jukebox
