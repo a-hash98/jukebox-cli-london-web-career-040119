@@ -45,13 +45,16 @@ def run
   puts "Please enter a command:"
   u_inp = gets.chomp
   until u_inp != "exit" do
-    u_inp = gets.chomp
+
     if u_inp == "help"
       help
     elsif u_inp == "list"
       list
     elsif u_inp == "play"
       play
-    end
+    elsif u_chomp == "exit"
+      exit_jukebox
+      break
+    u_inp = gets.chomp
   end
 end
