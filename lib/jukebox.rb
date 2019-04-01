@@ -36,6 +36,7 @@ def play(songs)
   if inp.class == Integer
     puts "YES"
     if !inp.between?(1,9)
+      puts "YES2"
       puts "Invalid input, please try again"
     else
       s = songs[inp-1]
