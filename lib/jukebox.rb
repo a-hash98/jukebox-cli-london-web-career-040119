@@ -45,8 +45,7 @@ def run(songs)
   puts "Please enter a command:"
   u_inp = gets.chomp
   until u_inp != "exit" do
-
-    if u_inp == "help"
+    u_inp == "help"
       help
     elsif u_inp == "list"
       list
@@ -54,6 +53,7 @@ def run(songs)
       play
     elsif u_chomp == "exit"
       exit_jukebox
+      break
       break
     end
     u_inp = gets.chomp
