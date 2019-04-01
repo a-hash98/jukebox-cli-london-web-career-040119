@@ -29,14 +29,13 @@ def play(songs)
 
     if !songs.include?(inp) || !inp.to_i.between?(1,9)
       puts "Invalid input, please try again"
+    elsif inp.to_i.between?(1,9)
+      puts "Playing #{songs[inp.to_i-1]}"
     else
       puts "Playing #{inp}"
-    else
-      puts "Playing #{songs[inp-1]}"
     end
-  end
-
 end
+
 
 def exit_jukebox
   puts "Goodbye"
