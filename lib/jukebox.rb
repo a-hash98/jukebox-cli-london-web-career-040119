@@ -33,3 +33,5 @@ def play(songs)
     puts "Playing #{s}"
   else
     puts "Playing #{inp}"
+  end
+end
