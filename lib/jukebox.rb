@@ -69,3 +69,5 @@ def run(songs)
     u_inp = gets.chomp
   end
 end
+
+run(songs)
