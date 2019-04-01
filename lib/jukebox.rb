@@ -46,5 +46,19 @@ def run
   u_inp = gets.chomp
   until u_inp != "exit" do
     u_inp = gets.chomp
+    if u_inp == "exit"
+      exit_jukebox
+      break
+    end
+    if u_inp == "help"
+      help
+    elsif u_inp == "list"
+      list
+    elsif u_inp == "play"
+      play
+    end
+  end
+end
+
 
   end
