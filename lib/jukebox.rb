@@ -60,4 +60,3 @@ def run(songs)
     u_inp = gets.chomp
   end
 end
-
