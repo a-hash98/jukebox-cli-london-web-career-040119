@@ -27,7 +27,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   inp = gets.chomp
 
-    if !songs.include?(inp) || !inp.to_i.between?(1,9)
+    if !songs.include?(inp) && !inp.to_i.between?(1,9)
       puts "Invalid input, please try again"
     elsif inp.to_i.between?(1,9)
       puts "Playing #{songs[inp.to_i-1]}"
